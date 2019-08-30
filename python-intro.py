@@ -5,5 +5,6 @@
 import sys
 
 inputFile = open(sys.argv[1], 'r')
+outputFile = open(sys.argv[2], 'w')
 speech = inputFile.read()
-print speech
+outputFile.write('%s' % speech)

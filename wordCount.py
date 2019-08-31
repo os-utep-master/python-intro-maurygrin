@@ -8,12 +8,11 @@ inputFile = open(sys.argv[1], 'r')
 outputFile = open(sys.argv[2], 'w')
 speech = inputFile.read()
 speech = speech.lower()
-punctuation = ",;:.-"
+speech = speech.replace('.', "").replace(",","").replace(";","").replace(":","").replace("\"", "").replace("-"," ").replace("'"," ")
 speech = speech.split()
 final = {}
 
 for word in speech:
-    word = word.strip(punctuation)
     if word in final:
         final[word] += 1
     else:

@@ -11,7 +11,7 @@ if len(sys.argv) != 3:
     print('Wrong arguments')
     exit()
 
-# Input file to count   
+# Input file to count words  
 inputFile = sys.argv[1]
 
 #Check if the file exist in the folder
@@ -20,7 +20,7 @@ if not os.path.exists(inputFile):
     exit()
 
 inputFile = open(sys.argv[1], 'r')
-# Output file to write the counting
+# Output file to write the counting of words
 outputFile = open(sys.argv[2], 'w')
 # Read the input file, lowercase, remove punctiation marks, and converts the input file into a list
 speech = inputFile.read()
@@ -30,7 +30,7 @@ speech = speech.split()
 # List with the content to be written in the output file
 final = {}
 
-# Obtain words in the file without duplicates and count how many times are written in the file
+# Obtain words in the file without duplicates and counts how many times are written in the file
 for word in speech:
     if word in final:
         final[word] += 1

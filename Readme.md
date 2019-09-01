@@ -1,30 +1,12 @@
-This repository contains the code for the python introduction lab. The
-purpose is to have a fairly simple python assignment that introduces
-the basic features and tools of python
+Intro to Python Lab: Word Counter
+===================================
+Author: Mauricio Roberto Hidalgo
 
-In the repository are two plain text files with lots of words. Your
-assignment is to create a python 2 program which:
-* takes as input the name of an input file and output file
-* example
+This program writes into an output file how many times a word was written in an input file in alphabetical order. 
 
-`$ python wordCount.py input.txt output.txt`
-* keeps track of the total the number of times each word occurs in the text file 
-* excluding white space and punctuation
-* is case-insensitive
-* print out to the output file (overwriting if it exists) the list of
-  words sorted in descending order with their respective totals
-  separated by a space, one word per line
+Instructions for the project:
 
-To test your program we provide wordCountTest.py and two key
-files. This test program takes your output file and notes any
-differences with the key file. An example use is:
-
-`$ python wordCountTest.py declaration.txt myOutput.txt declarationKey.txt`
-
-The re regular expression library and python dictionaries should be
-used in your program. 
-
-Note that there are two major dialects of Python.  Python 3.* is
-incompatible with 2*.  As a result, Python 2.7 remains popular.  All
-of our examples were ported to 3.* during the summer of 2018.  We (mildly)
-encourage students to use that dialect of Python.
+    - Write the name of an input file and an output file as an input once you are on the main directory.
+	- Example: $ python wordCount.py input.txt output.txt 
+	- input.txt is the file to be used as an input and output.txt is going to be the file that is going to contain the counting.
+	- The program is going to tell you did not put the correct number of arguments or if the input file does not exist.

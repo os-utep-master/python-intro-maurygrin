@@ -8,7 +8,7 @@ import os
 
 # Check if the number of arguments is correct
 if len(sys.argv) != 3:
-    print('Wrong arguments')
+    print('Wrong number of arguments')
     exit()
 
 # Input file to count words  

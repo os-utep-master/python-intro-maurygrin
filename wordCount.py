@@ -1,6 +1,6 @@
 # Mauricio Roberto Hidalgo
 # Python-Intro Lab
-# September 1, 2019
+# 09/01/2019
 # CS4375 - Theory of Operating Systems
 
 import sys

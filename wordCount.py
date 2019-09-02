@@ -11,10 +11,10 @@ if len(sys.argv) != 3:
     print('Wrong number of arguments')
     exit()
 
-# Input file to count words  
+# Input file  
 inputFile = sys.argv[1]
 
-#Check if the file exist in the folder
+# Check if the file exist in the folder
 if not os.path.exists(inputFile):
     print('The file does not exist in this folder')
     exit()
@@ -22,7 +22,7 @@ if not os.path.exists(inputFile):
 inputFile = open(sys.argv[1], 'r')
 # Output file to write the counting of words
 outputFile = open(sys.argv[2], 'w')
-# Read the input file, lowercase, remove punctiation marks, and converts the input file into a list
+# Read the input file, lowercase, remove punctuation marks, and converts the input file into a list
 speech = inputFile.read()
 speech = speech.lower()
 speech = speech.replace('.', "").replace(",","").replace(";","").replace(":","").replace("\"", "").replace("-"," ").replace("'"," ")
